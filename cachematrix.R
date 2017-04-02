@@ -30,7 +30,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## --> assumes that the matrix supplied is always invertible
 
 cacheSolve <- function(x, ...) {
-    m <- x$setinvx()
+    m <- x$getinvx()
     if(!is.null(m)) {
         message("getting cached data")
         return(m)
